@@ -1,8 +1,8 @@
 # rompler
 
-![Screenshot](assets/screenshot.png)
-
 A simple rompler[^1] made in Rust, allowing you to play music inside your terminal!
+
+![Screenshot](assets/screenshot.png)
 
 ## Features
 
