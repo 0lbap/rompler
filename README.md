@@ -1,6 +1,6 @@
 # rompler
 
-A simple rompler^[1] made in Rust, allowing you to play music inside your terminal!
+A simple rompler[^1] made in Rust, allowing you to play music inside your terminal!
 
 ## Features
 
@@ -20,4 +20,4 @@ cargo run
 
 Piano sound effect in `sounds/piano.mp3` by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=95007">freesound_community</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=95007">Pixabay</a>.
 
-^[1]: _A rompler is an electronic musical instrument that plays pre-fabricated sounds based on audio samples. The term rompler is a blend of the terms ROM and sampler. In contrast to samplers, romplers do not record audio._ (Wikipedia)
+[^1]: _A rompler is an electronic musical instrument that plays pre-fabricated sounds based on audio samples. The term rompler is a blend of the terms ROM and sampler. In contrast to samplers, romplers do not record audio._ (Wikipedia)
