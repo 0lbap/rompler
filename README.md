@@ -1,5 +1,7 @@
 # rompler
 
+![Screenshot](assets/screenshot.png)
+
 A simple rompler[^1] made in Rust, allowing you to play music inside your terminal!
 
 ## Features
@@ -15,6 +17,10 @@ git clone https://github.com/0lbap/rompler.git
 cd rompler
 cargo run
 ```
+
+## Adding your own instruments
+
+You can easily add your own audio files to the sound bank by putting them under the `sounds/` directory!
 
 ## Credits
 
