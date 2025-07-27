@@ -18,7 +18,15 @@ pub fn ui(frame: &mut Frame, app: &App) {
         .style(Style::default());
 
     let title = Paragraph::new(Text::styled(
-        "Sampling \"piano.wav\". Press <ESC> to quit.",
+        format!(
+            "Playing \"{}\" ({}/{}). Press <ESC> to quit, use arrows to change instrument.",
+            app.instruments
+                .get(app.current_instrument_index)
+                .unwrap()
+                .name,
+            app.current_instrument_index + 1,
+            app.instruments.len()
+        ),
         Style::default(),
     ))
     .block(title_block);

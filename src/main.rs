@@ -50,9 +50,17 @@ fn run_app<B: Backend>(terminal: &mut Terminal<B>, app: &mut App) -> Result<(), 
             if key.kind == event::KeyEventKind::Press {
                 match key.code {
                     KeyCode::Esc => break,
+                    KeyCode::Left => {
+                        app.prev_instrument();
+                    }
+                    KeyCode::Right => {
+                        app.next_instrument();
+                    }
                     KeyCode::Char(c) => {
                         if let Some(note) = app.char_to_note.get(&c) {
-                            let source_for_speed = app.source.clone();
+                            let current_instrument =
+                                app.instruments.get(app.current_instrument_index).unwrap();
+                            let source_for_speed = current_instrument.source.clone();
                             let note_map_value = app.note_map.get(note).unwrap().clone();
                             app.press_note(note.to_string());
                             let s = source_for_speed.speed(note_map_value as f32);
@@ -61,6 +69,7 @@ fn run_app<B: Backend>(terminal: &mut Terminal<B>, app: &mut App) -> Result<(), 
                                 Err(e) => return Err(Box::new(e)),
                             }
                         }
+                        // TODO: handle arrow keys to change instrument
                     }
                     _ => {}
                 }

@@ -6,7 +6,7 @@ A simple rompler[^1] made in Rust, allowing you to play music inside your termin
 
 - [x] Support playing single notes and chords from sample audio file (using [rodio](https://github.com/RustAudio/rodio))
 - [x] Terminal User Interface (TUI) displaying a piano roll (using [ratatui](https://github.com/ratatui/ratatui))
-- [ ] Support for multiple instruments
+- [x] Support for multiple instruments (using arrow keys)
 
 ## Build and run
 
