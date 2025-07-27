@@ -69,7 +69,6 @@ fn run_app<B: Backend>(terminal: &mut Terminal<B>, app: &mut App) -> Result<(), 
                                 Err(e) => return Err(Box::new(e)),
                             }
                         }
-                        // TODO: handle arrow keys to change instrument
                     }
                     _ => {}
                 }
